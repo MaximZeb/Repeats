@@ -59,20 +59,62 @@
 // // Можно посмотреть в консоле в браузера все методы через слоово num
 // const num = new Array();
 // Урок 3 Event Loop
-console.log('start');
+// console.log('start');
 
-function ter() {
-    console.log('end');
+// function ter() {
+//     console.log('end');
+// }
+
+// setTimeout(ter, 3000);
+
+// setInterval(plus, 1000)
+
+// function plus() {
+//     const data = new Date;
+//     return console.log(data);
+// }
+// Урок 4 promise
+// const p = new Promise(function(resolve, reject) {
+//     setTimeout(function() {
+//         console.log('Preparing data...')
+
+//         const backendData = {
+//         server: 'aws',
+//         port: 2000,
+//         status: 'working'
+//         }
+//         resolve(backendData);
+//     }, 2000)
+// })
+
+// p.then(data => {
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             data.modified = true
+//             resolve(data)
+//         }, 2000)
+//     })
+//     .catch(function(err) {
+//         console.log('Error', err)
+//     })
+//     .then(clientData => {
+//         clientData.fromPromise = true
+//         console.log('Data received...', clientData)
+//         return clientData
+//     }).then(data => {
+//         setTimeout(() => {console.log('End...')}, 2000)
+//     })
+// }).finally(()=> console.log('finally'))
+let fun = ms => {
+    return new Promise(resolve => {
+        setTimeout(() => resolve(), ms)
+    })
 }
-
-setTimeout(ter, 3000);
-
-setInterval(plus, 1000)
-
-function plus() {
-    const data = new Date;
-    return console.log(data);
-}
+fun(2000)
+.finally(()=> console.log('finally'))
+.then(()=>{
+    console.log("Start-End")
+});
     </script>
 </body>
 </html>
