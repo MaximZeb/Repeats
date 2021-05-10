@@ -105,16 +105,26 @@
 //         setTimeout(() => {console.log('End...')}, 2000)
 //     })
 // }).finally(()=> console.log('finally'))
-let fun = ms => {
-    return new Promise(resolve => {
-        setTimeout(() => resolve(), ms)
-    })
+// let fun = ms => {
+//     return new Promise(resolve => {
+//         setTimeout(() => resolve(), ms)
+//     })
+// }
+// fun(2000)
+// .finally(()=> console.log('finally'))
+// .then(()=>{
+//     console.log("Start-End")
+// });
+let foo = (x,y,z) => {
+    console.log(x,y,z);
 }
-fun(2000)
-.finally(()=> console.log('finally'))
-.then(()=>{
-    console.log("Start-End")
-});
+let arr = [1,2,3];
+foo(...arr);
+let der = (...agrs) => {
+    console.log(agrs);
+}
+der(1,2,3,54);
+
     </script>
 </body>
 </html>
