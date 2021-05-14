@@ -7,6 +7,7 @@
     <title>Document</title>
 </head>
 <body>
+    <div id="der"></div>
     <script>
         // Урок 2 this apply call bind
 
@@ -115,17 +116,29 @@
 // .then(()=>{
 //     console.log("Start-End")
 // });
-let foo = (x,y,z) => {
-    console.log(x,y,z);
+// let foo = (x,y,z) => {
+//     console.log(x,y,z);
+// }
+// let arr = [1,2,3];
+// foo(...arr);
+// let der = (...agrs) => {
+//     console.log(agrs);
+// }
+// der(1,2,3,54);
+// setTimeout(() => {let user ="maks";
+// console.log(`Hey, ${user}`)}, 1000);
+// let nicknames = ['di', 'boo', 'punkeye'];
+// nicknames.size = 3;
+// for (let nickname of nicknames) {
+//     console.log(nickname);
+// }
+const ELEMENT = document.getElementById('der');
+ELEMENT.classList.add(newstyles)
+const newstyles = {
+    width: 100 px;
+    heigth: 200 px;
+    margin: 10 px;
 }
-let arr = [1,2,3];
-foo(...arr);
-let der = (...agrs) => {
-    console.log(agrs);
-}
-der(1,2,3,54);
-setTimeout(() => {let user ="maks";
-console.log(`Hey, ${user}`)}, 1000);
     </script>
 </body>
 </html>
