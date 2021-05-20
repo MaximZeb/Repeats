@@ -140,37 +140,39 @@
 //     margin: 10 px;
 // }
 
-const delay = ms => {
-    return new Promise(r => setTimeout(() => r(), ms))
-}
-
-const url = 'https://jsonplaceholder.typicode.com/todos/1';
-
-// function fetchTodos() {
-//     console.log('start...')
-//     return delay(2000)
-//         .then(() => fetch(url))
-//         .then(response => response.json())
+// const delay = ms => {
+//     return new Promise(r => setTimeout(() => r(), ms))
 // }
-// fetchTodos()
-// .then(data => {
-//     console.log('Data:', data)
-// })
-// .catch(e => console.error(e))
-async function acyncFetch() {
-    try {
-        console.log('start...');
-        await delay(2000);
-        const response = await fetch(url);
-        const data = await response.json();
-        console.log('Data:', data);
-        await delay(1000);
-        console.log('End...')
-    } catch (e) {
-        console.error(e);
-    }
+
+// const url = 'https://jsonplaceholder.typicode.com/todos/1';
+
+// // function fetchTodos() {
+// //     console.log('start...')
+// //     return delay(2000)
+// //         .then(() => fetch(url))
+// //         .then(response => response.json())
+// // }
+// // fetchTodos()
+// // .then(data => {
+// //     console.log('Data:', data)
+// // })
+// // .catch(e => console.error(e))
+// async function acyncFetch() {
+//     try {
+//         console.log('start...');
+//         await delay(2000);
+//         const response = await fetch(url);
+//         const data = await response.json();
+//         console.log('Data:', data);
+//         await delay(1000);
+//         console.log('End...')
+//     } catch (e) {
+//         console.error(e);
+//     }
     
-}
+// }
+const STR = 'он пришел Л дом ';
+let exp = //;
 
     </script>
 </body>
